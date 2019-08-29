@@ -19,16 +19,27 @@
 >        在release中下载AutoTool.msi进行安装
 >     命令行版
 >        启动：    python Bilibili.py
->        安装:     1.将文件ffmpeg.exe添加到系统变量（我的电脑右键属性->高级设置->环境变量->系统变量，找到path这里点击一下点击编辑，
->                  移动到path最后一个字母，输入英文的分号,右键选择粘贴ffmpeg.exe的路径）
+>        安装:     1.将文件ffmpeg.exe添加到系统变量（我的电脑右键属性->高级设置->环境变量->系统变量，
+>
+>                  找到path这里点击一下点击编辑,移动到path最后一个字母，输入英文的分号,
+>
+>                  右键选择粘贴ffmpeg.exe的路径）
+>
 >                  2.安装74.0.3729.108_chrome_installer.exe
+>
 >                  3.LiveRecord.bat运行可以看到cmd在运行，也可以打开vbsLiveRecord.vbs不打开cmd
->                  选择开机自启动将vbsLiveRecord.vbs的快捷方式移动到C:\Users\用户名\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+>
+>                  选择开机自启动将vbsLiveRecord.vbs的快捷方式
+>
+>                  移动到C:\Users\用户名\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+>
 >                  投稿完成后录像移动到直播录像，在不保存在原来的目录下。
+>
 >                  deletefile.bat(可以删除7天前的直播录像)
 >python3 FFmpeg QQ群：837362626
+
 >74.0.3729.108_chrome_installer.exe和ffmpeg下载
-链接: https://pan.baidu.com/s/1J5PqtP4Q8YNx2NWB305AkA 提取码: w92p 
+>链接: https://pan.baidu.com/s/1J5PqtP4Q8YNx2NWB305AkA 提取码: w92p 
 
 Linux下以daemon进程启动
 
@@ -38,7 +49,8 @@ Linux下以daemon进程启动
 
 上传的自动化需要解决视频分割和验证登陆的问题，有两种方案。
 
-* 二值化、灰度处理找缺口计算移动像素，直接拖动发现拖到位置不能通过验证，提示：“拼图被怪物吃了”。滑动验证码会上传分析你的拖动行为，不能直接拖动，需要模拟人操作轨迹，加速度、抖动等等，以保证通过验证的成功率。
+* 二值化、灰度处理找缺口计算移动像素，直接拖动发现拖到位置不能通过验证，提示：“拼图被怪物吃了”。
+滑动验证码会上传分析你的拖动行为，不能直接拖动，需要模拟人操作轨迹，加速度、抖动等等，以保证通过验证的成功率。
 
 * 因为app是没有验证码的，所以还可以通过逆向app来分析验证过程。可参考comwrg/bilibiliupload的登陆部分
 
