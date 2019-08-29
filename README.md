@@ -3,8 +3,6 @@
 支持自动录制各大直播平台，上传直播录像到bilibili。  
 相关设置在config.yaml文件中，如直播间地址，b站账号密码
 
-使用需要修改文件名**config(demo).yaml** ➡ **config.yaml**
-
 >## Linux系统下使用方法：
 >
 >        启动：    ./Bilibili.py start
@@ -21,6 +19,13 @@
 >        在release中下载AutoTool.msi进行安装
 >     命令行版
 >        启动：    python Bilibili.py
+>        安装:     1.将文件ffmpeg.exe添加到系统变量（我的电脑右键属性->高级设置->环境变量->系统变量，找到path这里点击一下点击编辑，
+>                  移动到path最后一个字母，输入英文的分号,右键选择粘贴ffmpeg.exe的路径）
+>                  2.安装74.0.3729.108_chrome_installer.exe
+>                  3.LiveRecord.bat运行可以看到cmd在运行，也可以打开vbsLiveRecord.vbs不打开cmd
+>                  选择开机自启动将vbsLiveRecord.vbs的快捷方式移动到C:\Users\用户名\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+>                  投稿完成后录像移动到直播录像，在不保存在原来的目录下。
+>                  deletefile.bat(可以删除7天前的直播录像)
 >python3 FFmpeg QQ群：837362626
 
 Linux下以daemon进程启动
@@ -56,3 +61,4 @@ def modify(self, live_m):
 ```
 ## Credits
 * Thanks `zhangn1985/ykdl` provides Douyu-downloader.
+* fork https://github.com/ForgQi/bilibiliupload
