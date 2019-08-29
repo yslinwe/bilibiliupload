@@ -27,6 +27,8 @@
 >                  投稿完成后录像移动到直播录像，在不保存在原来的目录下。
 >                  deletefile.bat(可以删除7天前的直播录像)
 >python3 FFmpeg QQ群：837362626
+>74.0.3729.108_chrome_installer.exe和ffmpeg下载
+链接: https://pan.baidu.com/s/1J5PqtP4Q8YNx2NWB305AkA 提取码: w92p 
 
 Linux下以daemon进程启动
 
