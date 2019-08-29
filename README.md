@@ -2,7 +2,7 @@
 
 支持自动录制各大直播平台，上传直播录像到bilibili。  
 相关设置在config.yaml文件中，如直播间地址，b站账号密码
-
+> config(demo).yaml->config.yaml
 >## Linux系统下使用方法：
 >
 >        启动：    ./Bilibili.py start
